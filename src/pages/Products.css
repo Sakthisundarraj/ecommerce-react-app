@@ -450,105 +450,62 @@
 /* Medium Mobile */
 @media (max-width: 480px) {
   .products-header h1 {
-    font-size: 1.75rem;
+    font-size: 1.5rem;
   }
-  
   .products-grid {
     grid-template-columns: 1fr;
     gap: 1rem;
   }
-  
   .product-image {
     height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
-  
+  .product-image img {
+    width: auto;
+    max-width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: block;
+    object-fit: contain;
+  }
   .wishlist-btn {
-    width: 36px;
-    height: 36px;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 3;
+    font-size: 1.5rem;
+    background: rgba(255,255,255,0.8);
+    padding: 0.25rem 0.5rem;
+    border-radius: 50%;
   }
-  
   .discount-badge {
-    padding: 0.375rem 0.625rem;
+    top: 0.5rem;
+    right: 0.5rem;
     font-size: 0.7rem;
+    padding: 0.3rem 0.5rem;
   }
-  
   .product-info h3 {
-    font-size: 1rem;
-  }
-  
-  .current-price {
-    font-size: 1.125rem;
-  }
-  
-  .original-price {
-    font-size: 0.875rem;
-  }
-  
-  .add-to-cart-btn,
-  .btn-secondary {
-    padding: 0.625rem 0.875rem;
-    font-size: 0.8rem;
+    font-size: 1.1rem;
+    margin-top: 0.5rem;
+    margin-bottom: 0.25rem;
+    word-break: break-word;
+    padding-right: 2.2rem; /* space for heart icon */
   }
 }
 
 /* Small Mobile */
 @media (max-width: 360px) {
   .products-header h1 {
-    font-size: 1.5rem;
+    font-size: 1.1rem;
   }
-  
-  .products-header p {
-    font-size: 0.875rem;
-  }
-  
-  .search-input {
-    padding: 0.875rem 0.875rem 0.875rem 2.5rem;
-    font-size: 0.875rem;
-  }
-  
-  .filter-toggle {
-    padding: 0.625rem 1.25rem;
-    font-size: 0.875rem;
-  }
-  
-  .product-image {
-    height: 160px;
-  }
-  
-  .product-info {
-    padding: 0.875rem;
-  }
-  
   .product-info h3 {
-    font-size: 0.875rem;
+    font-size: 0.95rem;
+    padding-right: 2.2rem;
   }
-  
-  .product-info p {
-    font-size: 0.8rem;
-  }
-  
-  .current-price {
-    font-size: 1rem;
-  }
-  
-  .original-price {
-    font-size: 0.8rem;
-  }
-  
-  .add-to-cart-btn,
-  .btn-secondary {
-    padding: 0.5rem 0.75rem;
-    font-size: 0.75rem;
-  }
-  
   .wishlist-btn {
-    width: 32px;
-    height: 32px;
-  }
-  
-  .discount-badge {
-    padding: 0.25rem 0.5rem;
-    font-size: 0.65rem;
+    font-size: 1.2rem;
+    padding: 0.15rem 0.3rem;
   }
 }
 
